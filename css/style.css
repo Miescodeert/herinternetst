@@ -1,0 +1,128 @@
+h1 {
+  color: #2f4156;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 300%;
+  display: flex;
+  justify-content: center;
+  animation-name: veranderen;
+  animation-duration: 5s;
+}
+
+body {
+  background-color: #e8e2da;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.huidig {
+  color: #75726f;
+}
+
+a {
+  text-transform: uppercase;
+  color: #b2aba0;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5%;
+  height: 65vh;
+}
+
+.text {
+  max-width: 50%;
+  text-align: left;
+}
+
+.content img {
+  max-width: 300px;
+  height: auto;
+}
+
+.text {
+  flex: 1;
+}
+
+/* Notitie: keyframes/animatie gemaakt met behulp van de les slides */
+@keyframes veranderen {
+  0% {
+    opacity: 0.1;
+  }
+
+  50% {
+    opacity: 0.8;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.index section:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 65vh;
+  text-align: center;
+  background-color: #f1f1ec;
+}
+
+section:nth-child(2) p {
+  max-width: 70%;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Border gevraagd aan chatGPT om mijn foto heen. prompt: Chat hoe krijg ik een mooie border om mijn cirkel foto heen?*/
+.circle-img {
+  width: 20vw;
+  height: 20vw;
+  border-radius: 50%;
+  border: 5px solid #bfbfb6;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2vw;
+}
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 2%;
+}
+.card {
+  background-color: #edede9;
+  border-radius: 3%;
+  padding: 2vw;
+  width: 100%;
+  max-width: 20%;
+  text-align: center;
+}
+
+.motivatie main {
+  display: flex;
+  justify-content: center;
+}
+
+.motivatie main > section {
+  max-width: 80%;
+  text-align: left;
+}
+
+.omslag {
+  width: 100%;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
